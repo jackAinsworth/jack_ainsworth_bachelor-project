@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="basic.css">
+    <script type="importmap">
+{
+  "imports": {
+    "three":            "./node_modules/three/build/three.module.js",
+    "three/addons/":    "./node_modules/three/examples/jsm/",
+    "dat.gui":          "./node_modules/dat.gui/build/dat.gui.module.js"
+  }
+}
+
+    </script>
+</head>
+<body>
+<h1>Visuell Alignment with three.js</h1>
+<p id="scoreHistory"></p>
+<p id="replayScore"></p>
+
+<canvas id="c" style="color: aliceblue"></canvas>
+
+<input id="myInput" type="file"  accept=".pcd, .xyz" style="visibility:hidden" />
+<input id="loadScene" type="file" accept=".json" style="visibility:hidden" />
+<input id="loadReplay" type="file" accept=".json" style="visibility:hidden" />
+
+
+<a href="" id="saveSceneAsJson" download style="visibility:hidden" > </a>
+<a href="" id="saveReplay" download style="visibility:hidden" > </a>
+<script type="module" src="src/main.js">
+
+</script>
+</body>
+</html>
